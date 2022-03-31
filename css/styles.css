@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0 auto;
+}
+
+section.top-page {
+    background-color: white;
+    height: 900px;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.main-title {
+    color: black;
+    font-size: 80px;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 200px;
+}
+
+nav.nav li {
+    color: black;
+}
