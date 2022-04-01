@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
-<<<<<<< HEAD
 /* class qui s'applique a toute la page */
-=======
-/* s'applique a tout le site */
->>>>>>> d19c7adc54369198031b99b0e96b955aa7f59ac3
 
 * {
     font-family: 'Poppins';
@@ -20,7 +16,6 @@ body {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
 h2 {
     font-size: 40px;
     margin-left: 50px;
@@ -36,16 +31,12 @@ a:visited {
 }
 
 /* bar de navigation (entete) */
-=======
-/* menu de navigation */
->>>>>>> d19c7adc54369198031b99b0e96b955aa7f59ac3
 
 .nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
     width: 300px;
-<<<<<<< HEAD
     margin-left: 50px;
     margin-top: 30px;
 }
@@ -61,30 +52,11 @@ a:visited {
     text-align: center;
     margin-top: 300px;
     margin-bottom: 300px;
-=======
-}
-
-nav.nav li {
-    color: black;
-}
-
-/* page de bienvenue (landing page) */
-
-section.top-page {
-    background-color: white;
-    height: 400px;
-    
-}
-
-.main-title {
-    color: black;
->>>>>>> d19c7adc54369198031b99b0e96b955aa7f59ac3
     font-size: 80px;
 }
 
 /* page portfolio */
 
-<<<<<<< HEAD
 .portfolio {
     padding-left: 50px;
 }
@@ -122,13 +94,3 @@ footer {
     margin: 20px 100px;
     font-weight: 600;
 }
-=======
-section.portfolio-page {
-    background-color: white;
-    height: 400px;
-}
-
-section.portfolio-page li {
-    list-style: none;
-}
->>>>>>> d19c7adc54369198031b99b0e96b955aa7f59ac3
