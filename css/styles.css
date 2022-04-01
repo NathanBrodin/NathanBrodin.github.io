@@ -52,7 +52,19 @@ a:visited {
     text-align: center;
     margin-top: 300px;
     margin-bottom: 300px;
-    font-size: 80px;
+    font-size: 90px;
+}
+
+.title-shape {
+    width: 800px;
+    height: 350px;
+    background-color: #FAE1DD;
+    border-radius: 25px;
+    filter: drop-shadow(0px 4px 18px #000000);
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    z-index: -1;
 }
 
 /* page portfolio */
