@@ -1,35 +1,94 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+/* class qui s'applique a toute la page */
+
 * {
     font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0 auto;
 }
 
-section.top-page {
-    background-color: white;
-    height: 900px;
-    padding: 25px;
+h2 {
+    font-size: 40px;
+    margin-left: 50px;
 }
 
-/* page de bienvenue (landing page) */
+a:link {
+    text-decoration: none;
+}
 
-.main-title {
+a:visited {
     color: black;
-    font-size: 80px;
+    text-decoration: none;
 }
 
-/* menu de navigation */
+/* bar de navigation (entete) */
 
-nav.nav {
+.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 200px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
-nav.nav li {
-    color: black;
+/* page d'accueil (landing page) */
+
+.landing-page {
+    width: auto;
+    height: 800px;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    font-size: 80px;
+}
+
+/* page portfolio */
+
+.portfolio {
+    padding-left: 50px;
+}
+
+.project {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.project h3 {
+    font-size: 30px;
+}
+
+/* page a propos */
+
+.about {
+    padding-left: 50px;
+    margin-bottom: 200px;
+}
+
+/* page contact */
+
+.contact {
+    padding-left: 50px;
+    margin-bottom: 200px;
+}
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
 }
