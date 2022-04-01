@@ -1,24 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+/* s'applique a tout le site */
+
 * {
     font-family: 'Poppins';
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 body {
     margin: 0 auto;
-}
-
-section.top-page {
-    background-color: white;
-    height: 900px;
-    padding: 25px;
-}
-
-/* page de bienvenue (landing page) */
-
-.main-title {
-    color: black;
-    font-size: 80px;
 }
 
 /* menu de navigation */
@@ -32,4 +23,28 @@ nav.nav {
 
 nav.nav li {
     color: black;
+}
+
+/* page de bienvenue (landing page) */
+
+section.top-page {
+    background-color: white;
+    height: 400px;
+    
+}
+
+.main-title {
+    color: black;
+    font-size: 80px;
+}
+
+/* page portfolio */
+
+section.portfolio-page {
+    background-color: white;
+    height: 400px;
+}
+
+section.portfolio-page li {
+    list-style: none;
 }
