@@ -17,15 +17,20 @@
     </header>
 
     <div class="landing-page" id="landing-page">
-        <div class="title-shape" id="titleShape"></div>
         <h1 class="main-title">Nathan Brodin</h1>
+        <div class="title-shape" id="title-shape"></div>
+        <button class="goto-portfolio" id="goto-portfolio">
+            <a href="#portfolio">
+                <h3>Portfolio</h3>
+            </a>
+        </button>
     </div>
 
     <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="project">
             <div class="first-project">
-                <div class="first-project-shape"></div>
+                <div class="first-project-shape" id="first-project-shape"></div>
                 <h3>PST Esieabot</h3>
                 <p>Création d'une application mobile</p>
                 <a href="https://github.com/PST-Esieabot/Esieabot-Mobile-App" target="_blank" title="Github">Lien Github</a>
@@ -48,16 +53,18 @@
         <p>Étudiant à ESIEA - Ecole d'Ingénieurs en Sciences et Technologies du Numérique</p>
 
         <p>Compétence en HTML, CSS, Javascript, C, Kotlin et Python</p>
-        <img class="logo" src="/images/logo-html.svg" title="html">
-        <img class="logo" src="/images/logo-css.svg" title="css">
-        <img class="logo" src="/images/logo-javascript.svg" title="javascript">
-        <img class="logo" src="/images/logo-c.svg" title="c">
-        <img class="logo" src="/images/logo-kotlin.svg" title="kotlin">
-        <img class="logo" src="/images/logo-python.svg" title="python">
+        <div class="logo-container">
+            <img class="logo" src="/images/logo-html.svg" title="html">
+            <img class="logo" src="/images/logo-css.svg" title="css">
+            <img class="logo" src="/images/logo-javascript.svg" title="javascript">
+            <img class="logo" src="/images/logo-c.svg" title="c">
+            <img class="logo" src="/images/logo-kotlin.svg" title="kotlin">
+            <img class="logo" src="/images/logo-python.svg" title="python">
+        </div>
     </div>
     
     <div class="contact" id="contact">
-        <h2>Me contacter</h2>
+        <h3 class="contact-title">Me contacter</h3>
         <a href="https://www.linkedin.com/in/nathan-brodin-190b941b9/" target="_blank" title="Linkedin">
             <img class="logo" src="/images/logo-linkedin.svg" title="Linkedin">
         </a>
@@ -67,7 +74,7 @@
         <a href="mailto:brodin@et.esiea.fr" target="_blank" title="Mon email">Me contacter</a>
     </div>
     
-    <footer>
+    <footer id="footerID">
         <div class="footer">
             <p>Créer par Nathan Brodin</p>
             <a href="#landing-page">Retourner en haut</a>
