@@ -123,17 +123,15 @@ a:visited {
 }
 
 .first-project-info {
-
+    width: 75%;
 }
 
 .first-project-image {
-    display: flex;
-    align-self: flex-end;
+    width: 25%;
 }
 
 .first-project-image img{
-    width: 40%;
-  
+    width: 100%;
 }
 
 .second-project {
