@@ -6,7 +6,7 @@ var randomColor;
 const titleShape = document.getElementById("title-shape");
 const btnGoto = document.getElementById("goto-portfolio");
 const footer = document.getElementById("footerID");
-const firstProjectShape = document.getElementById("first-project-shape");
+const firstProjectBg = document.getElementById("first-project-info");
 
 titleShape.addEventListener("mouseover", function() {
     randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
@@ -14,5 +14,36 @@ titleShape.addEventListener("mouseover", function() {
     titleShape.style.backgroundColor = randomColor;
     btnGoto.style.backgroundColor = randomColor;
     footer.style.backgroundColor = randomColor;
-    firstProjectShape.style.backgroundColor = randomColor;
+    firstProjectBg.style.backgroundColor = randomColor;
 });
+
+/* Change les slides des projets */
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+
+  if (n > slides.length) {
+      slideIndex = 1
+    }
+  if (n < 1) {
+      slideIndex = slides.length
+    }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}

@@ -29,20 +29,31 @@
     <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="first-project">
-            <div class="first-project-info">
-                <h3>PST Esieabot</h3>
-                <p>Création d'une application mobile <br>
-                Passage par serveur Bluetooth RFCOMM pour controler le robot à distance <br>
-                Hebergement local d'un site web pour afficher la caméra du robot
+            <div class="first-project-info" id="first-project-info">
+                <h3>Application mobile Esieabot</h3>
+                <p>Création d'une application mobile pour controler le robot Esieabot à distance.<br><br>
+                Passage par serveur Bluetooth RFCOMM pour contrôler le robot, <br>
+                hebergement local d'un site web pour afficher la caméra du robot, fonction retour à la maison <br>
+                L'application est développé en Kotlin et l'OS du robot en Python.
                 </p>
                 <a href="https://github.com/PST-Esieabot/Esieabot-Mobile-App" target="_blank" title="Github">Plus d'info
                     <img class="github-link" src="images/logos/logo-github.svg" alt="Github">
                 </a>
             </div>
+
             <div class="first-project-image">
-                <img src="images/img-esieabot.jpg" alt="Esieabot">
+                <div class="slide fade">
+                    <img src="images/img-esieabot.jpg" alt="Esieabot" style="width: 100%">
+                </div>
+                <div class="slide fade">
+                    <img src="images/img-esieabot-box.jpg" alt="Esieabot box" style="width: 100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
+
         <div class="second-project">
             <div class="second-project-container">
                 <div class="second-project-shape"></div>
