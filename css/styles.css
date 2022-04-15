@@ -67,7 +67,9 @@ a:visited {
 }
 
 .nav-menu:hover {
-    text-decoration: underline;
+    text-decoration: none;
+
+    /* A AJOUTER */
 }
 
 /* page d'accueil (landing page) */
