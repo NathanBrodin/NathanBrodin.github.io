@@ -15,8 +15,12 @@ body {
 }
 
 h2 {
-    font-size: 40px;
-    margin-left: 50px;
+    font-size: 4rem;
+    margin-left: 4.3vw;
+}
+
+p {
+    font-size: 1rem;
 }
 
 a:link {
@@ -45,10 +49,10 @@ a:visited {
 .header {
     position: fixed;
     background-color: white;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
     top: 0;
     width: 100%;
-    height: 85px;
+    height: 8.7vh;
     z-index: 100;
 }
 
@@ -56,9 +60,10 @@ a:visited {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 300px;
-    margin-left: 50px;
-    margin-top: 30px;
+
+    width: 30vw;
+    margin-left: 3.5vw;
+    margin-top: 3.3vh;
 }
 
 .nav-menu:hover {
@@ -78,19 +83,19 @@ a:visited {
 }
 
 .main-title {
-    font-size: 90px;
+    font-size: 6rem;
     z-index: 1;
 }
 
 .title-shape {
-    width: 45%;
-    height: 35%;
+    width: 45vw;
+    height: 35vh;
     background-color: #DDFAE5;
-    border-radius: 25px;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 2vw;
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
     position: absolute;
-    left: 20%;
-    top: 20%;
+    left: 20.9vw;
+    top: 20vh;
 }
 
 .goto-portfolio {
@@ -98,28 +103,30 @@ a:visited {
     position: absolute;
 
     display: flex;
-    justify-content: center;
     align-items: center; 
 
-    margin-top: 30%;
-    width: 15%;
-    height: 7%;
+    margin-top: 70vh;
+    width: 15vw;
+    height: 7vh;
 
     background-color: #DDFAE5;
-    border-radius: 35px;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 10vw;
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
 
     transition: transform .2s;
 }
 
 .goto-portfolio:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0.1vh 4vh rgba(0, 0, 0, 0.25);
 }
 
 /* page portfolio */
 
 .portfolio h3 {
-    font-size: 25px;
+    font-size: 2rem;
+    margin-left: 6.3vw;
+    margin-top: 8vh;
 }
 
 /* Premier prjoet */
@@ -128,14 +135,18 @@ a:visited {
     display: flex;
     justify-content: space-between;
 
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
-    margin-bottom: 2%;
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
+    margin-bottom: 8vh;
 }
 
 .first-project-info {
     background-color: #DDFAE5;
-    padding: 50px;
     width: 50%;
+}
+
+.first-project-info p, a{
+    margin-left: 4.3vw;
+    margin-right: 2vw;
 }
 
 .first-project-image {
@@ -148,15 +159,15 @@ a:visited {
 
 .prev, .next {
     cursor: pointer;
-    padding: 16px;
+    padding: 0.7%;
     color: black;
     font-weight: bold;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0.5vw 0 0 0.5vw;
   }
 
   .next {
     right: 0;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0.5vw 0.5vw 0;
   }
 
   .prev:hover, .next:hover {
@@ -179,8 +190,8 @@ a:visited {
     display: flex;
     justify-content: space-between;
 
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
-    margin-bottom: 2%;
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
+    margin-bottom: 8vh;
 }
 
 .second-project-info {
@@ -199,15 +210,15 @@ a:visited {
 
 .prev2, .next2 {
     cursor: pointer;
-    padding: 16px;
+    padding: 0.7%;
     color: black;
     font-weight: bold;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0.5vw 0 0 0.5vw;
   }
 
   .next2 {
     right: 0;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0.5vw 0.5vw 0;
   }
 
   .prev2:hover, .next2:hover {
@@ -215,26 +226,26 @@ a:visited {
   }
 
 .github-link {
-    width: 20px;
-    height: 20px;
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 /* page a propos */
 
 .about {
-    padding-left: 50px;
-    padding-top: 70px;
+    padding-left: 4.3vw;
+    padding-top: 6vh;
 }
 
 .logo-container {
     display: flex;
-    width: 30%;
+    width: 30vw;
     justify-content: space-around;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 6vw;
+    height: 6vh;
 
     transition: transform .2s; /* Animation */
 }
@@ -246,19 +257,18 @@ a:visited {
 /* page contact */
 
 .contact {
-    padding-left: 50px;
-    padding-top: 70px;
+    padding-left: 4.3vw;
+    padding-top: 5vh;
 }
 
 .contact-title {
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 2rem;
+    margin-left: 4.3vw;
 }
 
 .contact-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    width: 6vw;
+    height: 6vh;
     transition: transform .2s; /* Animation */
 }
 
@@ -270,13 +280,13 @@ a:visited {
 
 footer {
     background-color: #DDFAE5;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.5vh 2vh rgba(0, 0, 0, 0.25);
 
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 8.7vh;
 
-    margin-top: 3%;
+    margin-top: 10vh;
     display: flex;
 }
 
@@ -287,5 +297,5 @@ footer {
 
     font-weight: 600;
     width: 90%;
-    margin-left: 50px
+    margin-left: 4.3vw;
 }
