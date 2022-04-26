@@ -61,8 +61,7 @@ a:visited {
     justify-content: space-between;
     list-style: none;
 
-    width: 30vw;
-    margin-left: 3.5vw;
+    width: 40vw;
     margin-top: 3.3vh;
 }
 
@@ -108,7 +107,6 @@ a:visited {
     align-items: center; 
 
     margin-top: 70vh;
-    width: 15vw;
     height: 7vh;
 
     background-color: #DDFAE5;
@@ -263,9 +261,17 @@ a:visited {
     padding-top: 5vh;
 }
 
-.contact-title {
+.contact h3 {
     font-size: 2rem;
+    margin-left: 6.3vw;
+    margin-top: 8vh;
+}
+
+.link-container {
+    display: flex;
+    width: 5vw;
     margin-left: 4.3vw;
+    justify-content: space-around;
 }
 
 .contact-logo {

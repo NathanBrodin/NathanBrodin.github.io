@@ -1,7 +1,9 @@
 
 /* Change la couleur de la forme au passage de la souris */
+
 let colorArray = ["#DDFAE5", "#DDE0FA", "#FADDF7", "#FAF2DD", "#FADDDD", "#FAF9DD", "#F6DDFA"];
 var randomColor;
+var previousColor;
 
 const titleShape = document.getElementById("title-shape");
 const btnGoto = document.getElementById("goto-portfolio");
@@ -9,7 +11,8 @@ const footer = document.getElementById("footerID");
 const firstProjectBg = document.getElementById("first-project-info");
 const secondProjectBg = document.getElementById("second-project-info");
 
-titleShape.addEventListener("mouseover", function() {
+function changeBgColor() {
+
     randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
 
     titleShape.style.backgroundColor = randomColor;
@@ -17,7 +20,10 @@ titleShape.addEventListener("mouseover", function() {
     footer.style.backgroundColor = randomColor;
     firstProjectBg.style.backgroundColor = randomColor;
     secondProjectBg.style.backgroundColor = randomColor;
-});
+}
+
+window.addEventListener("load", changeBgColor);
+titleShape.addEventListener("mouseover", changeBgColor);
 
 /* Change les slides des projets */
 
