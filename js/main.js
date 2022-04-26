@@ -1,31 +1,24 @@
 
-/* Change la couleur de la forme au passage de la souris */
+/* Change la couleur du fond au passage de la souris sur le titre*/
 
 let colorArray = ["#DDFAE5", "#DDE0FA", "#FADDF7", "#FAF2DD", "#FADDDD", "#FAF9DD", "#F6DDFA"];
 var randomColor;
 var previousColor;
 
 const titleShape = document.getElementById("title-shape");
-const btnGoto = document.getElementById("goto-portfolio");
-const footer = document.getElementById("footerID");
-const firstProjectBg = document.getElementById("first-project-info");
-const secondProjectBg = document.getElementById("second-project-info");
-
-const background = document.getElementsByClassName("background");
+var background = document.getElementsByClassName("background");
 
 function changeBgColor() {
 
-  randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
+  /* Permet de ne pas tomber 2 fois de suite sur la meme couleur */
+  do {
+    randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
+  } while (randomColor == previousColor);
+  previousColor = randomColor;
 
-  background = randomColor;
-
-  /*
-  titleShape.style.backgroundColor = randomColor;
-  btnGoto.style.backgroundColor = randomColor;
-  footer.style.backgroundColor = randomColor;
-  firstProjectBg.style.backgroundColor = randomColor;
-  secondProjectBg.style.backgroundColor = randomColor;
-  */
+  for(var i = 0; i < background.length; i++) {
+    background[i].style.background = randomColor;
+  }
 }
 
 window.addEventListener("load", changeBgColor);
