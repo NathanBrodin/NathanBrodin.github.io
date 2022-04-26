@@ -11,15 +11,21 @@ const footer = document.getElementById("footerID");
 const firstProjectBg = document.getElementById("first-project-info");
 const secondProjectBg = document.getElementById("second-project-info");
 
+const background = document.getElementsByClassName("background");
+
 function changeBgColor() {
 
-    randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
+  randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
 
-    titleShape.style.backgroundColor = randomColor;
-    btnGoto.style.backgroundColor = randomColor;
-    footer.style.backgroundColor = randomColor;
-    firstProjectBg.style.backgroundColor = randomColor;
-    secondProjectBg.style.backgroundColor = randomColor;
+  background = randomColor;
+
+  /*
+  titleShape.style.backgroundColor = randomColor;
+  btnGoto.style.backgroundColor = randomColor;
+  footer.style.backgroundColor = randomColor;
+  firstProjectBg.style.backgroundColor = randomColor;
+  secondProjectBg.style.backgroundColor = randomColor;
+  */
 }
 
 window.addEventListener("load", changeBgColor);
