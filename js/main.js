@@ -26,6 +26,46 @@ titleShape.addEventListener("mouseover", changeBgColor);
 
 /* Change les slides des projets */
 
+class Slider {
+  constructor(slidesClass, prev, next) {
+    this.slides = document.getElementsByClassName(slidesClass);
+    this.prev = document.getElementById(prev);
+    this.next = document.getElementById(next);
+    this.slideIndex = 1;
+
+    this.prev.addEventListener("onclick", this.plusSlide(-1));
+    this.next.addEventListener("onclick", this.plusSlide(1));
+  }
+
+  plusSlide(n) {
+    this.showSlides(this.slideIndex += n);
+  }
+
+  currentSlide(n) {
+    this.showSlides(this.slideIndex = n);
+  }
+
+  showSlides(n) {
+    if (n > this.slides.length) {
+      this.slideIndex = 1;
+    }
+    if (n < 1) {
+      this.slideIndex = this.slides.length;
+    }
+
+    for( let i = 0; i < this.slides.length; i++) {
+      this.slides[i].style.display = "none";
+    }
+
+    this.slides[this.slideIndex - 1].style.display = "block";
+  }
+}
+
+const project1Slide = new Slider("slide", "prev", "next");
+const project2Slide = new Slider("slide2", "prev2", "next2");
+
+
+/*
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -42,10 +82,10 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("slide");
 
   if (n > slides.length) {
-      slideIndex = 1
+      slideIndex = 1;
     }
   if (n < 1) {
-      slideIndex = slides.length
+      slideIndex = slides.length;
     }
 
   for (i = 0; i < slides.length; i++) {
@@ -55,7 +95,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-/* Projet 2 */
 let slideIndex2 = 1;
 showSlides2(slideIndex2);
 
@@ -84,3 +123,4 @@ function showSlides2(n) {
 
   slides2[slideIndex2-1].style.display = "block";
 }
+*/
