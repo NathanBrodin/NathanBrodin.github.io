@@ -71,16 +71,6 @@ a:visited {
     /* A AJOUTER */
 }
 
-.connect {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-
-    background-color: black;
-    float: right;
-    margin-right: 3vw;
-}
-
 /* page d'accueil (landing page) */
 
 .landing-page {
