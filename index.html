@@ -16,9 +16,9 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <li class="nav-menu"><a href="#landing-page">Accueil</a></li>
+            <li class="nav-menu"><a href="#landing-page">Home</a></li>
             <li class="nav-menu"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-menu"><a href="#about">A propos</a></li>
+            <li class="nav-menu"><a href="#about">About</a></li>
         </nav>
     </header>
 
@@ -27,65 +27,140 @@
         <div class="title-shape background" id="title-shape"></div>
         <button class="goto-portfolio background" id="goto-portfolio">
             <a href="#portfolio">
-                <h3>⇩ Mon portfolio ⇩</h3>
+                <h3>⇩ My portfolio ⇩</h3>
             </a>
         </button>
     </div>
 
     <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
-        <div class="first-project">
-            <div class="first-project-info background">
-                <h3>Application mobile Esieabot</h3>
-                <p>Création d'une application mobile pour controler le robot Esieabot à distance.<br><br>
-                Passage par serveur Bluetooth RFCOMM pour contrôler le robot, <br>
-                hebergement local d'un site web pour afficher la caméra du robot, fonction retour à la maison <br>
-                L'application est développé en Kotlin et l'OS du robot en Python.
+        <div class="project background">
+            <div class="project-container">
+                <h3>My Password Manager Chrome extension</h3>
+                <h4>About</h4>
+                <p>
+                    Development of a Chrome extension to manage the user's personal information. Automatically populates login 
+                    pages with personal user information, saves when not stored.
+                    <br>
+                    Coded with ReactJS, stored and authenticated with Firebase Firestore and encrypted with AES.
                 </p>
-                <a class="link" href="https://github.com/PST-Esieabot/Esieabot-Mobile-App" target="_blank" title="Github">Plus d'info
-                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">
+
+                <div class="skills">
+                    <ul class="tags">
+                        <li> <a href="#" class="tag">ReactJS</a></li>
+                        <li> <a href="#" class="tag">Javascript</a></li>
+                        <li> <a href="#" class="tag">Firebase</a></li>
+                        <li> <a href="#" class="tag">Chrome-extension</a></li>
+                    </ul>
+                </div>
+
+                <a class="link" href="https://github.com/NathanBrodin/MyPasswordManager" target="_blank" title="Github">
+                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">Full details and source code on Github
                 </a>
             </div>
 
-            <div class="first-project-image">
-                <div class="slide fade">
-                    <img src="images/img-esieabot.jpg" alt="Esieabot" style="width: 100%">
-                </div>
-                <div class="slide fade">
-                    <img src="images/img-esieabot-box.jpg" alt="Esieabot box" style="width: 100%">
-                </div>
-
-                <a class="prev" id="prev">&#10094;</a>
-                <a class="next" id="next">&#10095;</a>
+            <div class="project-image">
+                    <img src="images/img-MyPasswordManager.webp" alt="MyPasswordManager">
             </div>
         </div>
 
-        <div class="second-project">
-            <div class="second-project-image">
-                <div class="slide2 fade">
-                    <img src="images/img-esieabot-box.jpg" alt="Esieabot" style="width: 100%">
-                </div>
-                <div class="slide2 fade">
-                    <img src="images/img-esieabot.jpg" alt="Esieabot box" style="width: 100%">
-                </div>
+        <div class="project background">
+            <div class="project-image">
+                <img src="images/img-esieabot.jpg" alt="Esieabot">
+        </div>
 
-                <a class="prev2" id="prev2">&#10094;</a>
-                <a class="next2" id="next2">&#10095;</a>
-            </div>
-
-            <div class="second-project-info background">
-                <h3>Création d'un portfolio</h3>
-                <p>Initiation au language HTML, CSS et Javascript pour la création de mon portfolio
+            <div class="project-container">
+                <h3>ESIEABOT Mobile app</h3>
+                <h4>About</h4>
+                <p>
+                    The Esieabot mobile application allows you to control the ESIEABOT robot remotely via Bluetooth.
+                    The robot also hosts a website to display camera feedback which is then used by the application.
+                    The application is coded in Kotlin and the robot OS in Python.
+                    <br>
+                    ESIEABOT is a 2 motors robot with a RaspberryPi zero. The python program is running on RaspbianOS, it communicate by 
+                    Bluetooth with the mobile app. 
+                    <br>
+                    The mobile app contain multiple fonctionnalities such as BluetoothAutoparing, wifi configuration, help guide and many more.
+                    <br><br>
+                    Second prize at the Scientific and Technical Project fair on the ESIEA Laval campus.
+                    Reward for my project among 20 projects of 2nd year students.
                 </p>
-                <a class="link" href="https://github.com/NathanBrodin/nathanbrodin.github.io" target="_blank" title="Github">Plus d'info
-                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">
+
+                <div class="skills">
+                    <ul class="tags">
+                        <li> <a href="#" class="tag">Kotlin</a></li>
+                        <li> <a href="#" class="tag">Python</a></li>
+                        <li> <a href="#" class="tag">Android</a></li>
+                        <li> <a href="#" class="tag">RaspberryPi</a></li>
+                    </ul>
+                </div>
+
+                <a class="link" href="https://github.com/PST-Esieabot/Esieabot-Mobile-App" target="_blank" title="Github">
+                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">Full details and source code on Github
+                </a>
+            </div> 
+        </div>
+
+        <div class="project background">
+            <div class="project-container">
+                <h3>AES</h3>
+                <h4>About</h4>
+                <p>
+                    Encrypt messages with AES 128.
+                    <br>
+                    Coded in C.
+                </p>
+
+                <div class="skills">
+                    <ul class="tags">
+                        <li> <a href="#" class="tag">C programming</a></li>
+                        <li> <a href="#" class="tag">Cryptography</a></li>
+                    </ul>
+                </div>
+
+                <a class="link" href="https://github.com/NathanBrodin/AES" target="_blank" title="Github">
+                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">Full details and source code on Github
                 </a>
             </div>
+
+            <div class="project-image">
+                    <img src="images/img-AES.jpg" alt="AES">
+            </div>
+        </div>
+
+        <div class="project background">
+            <div class="project-image">
+                <img src="images/img-portfolio.jpg" alt="Portfolio">
+        </div>
+
+            <div class="project-container">
+                <h3>Portfolio</h3>
+                <h4>About</h4>
+                <p>
+                    Development of this portfolio to show all my project
+                    <br>
+                    Coded in Javascript, HTML and CSS.
+                    <br>
+                    I planned to rebuild this website with ReactJS and Bootstrap in autumn 2022.
+                </p>
+
+                <div class="skills">
+                    <ul class="tags">
+                        <li> <a href="#" class="tag">Javascript</a></li>
+                        <li> <a href="#" class="tag">HTML</a></li>
+                        <li> <a href="#" class="tag">CSS</a></li>
+                    </ul>
+                </div>
+
+                <a class="link" href="https://github.com/NathanBrodin/nathanbrodin.github.io" target="_blank" title="Github">
+                    <img class="github-link" src="images/logos/logo-github.svg" alt="Github">Full details and source code on Github
+                </a>
+            </div> 
         </div>
     </div>
     
     <div class="about" id="about">
-        <h2>A propos</h2>
+        <h2>About me</h2>
         <p>Étudiant en deuxième année à l'ESIEA - Ecole d'Ingénieurs en Sciences et Technologies du Numérique <br>
             Futur étudiant à Centria University of Applied Sciences, Finlande <br> <br>
             TOEIC® Listening and Reading (Score: 840/980)
