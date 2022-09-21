@@ -44,6 +44,30 @@ a:visited {
     background-position: -99.99% 0;
   }
 
+.new-portfolio {
+    background-color: red;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    z-index: 550;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-portfolio h2, .new-portfolio p {
+    color: white;
+}
+
+.new-portfolio h2{
+    font-size: 2rem;
+}
+
+.new-portfolio p{
+    font-size: 1rem;
+}
+
 /* bar de navigation (entete) */
 
 .header {
